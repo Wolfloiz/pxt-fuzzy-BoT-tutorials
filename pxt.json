@@ -9,12 +9,11 @@
     },
     "files": [
         "README.md",
-        "main.blocks",
-        "main.ts"
+        "fb-moving-tutorial.md",
+        "fb-joystick-remote.md",
+        "fb-joystick-veiculo.md"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
+    "testFiles": [],
     "public": true,
     "targetVersions": {
         "target": "7.0.61",
@@ -23,5 +22,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
