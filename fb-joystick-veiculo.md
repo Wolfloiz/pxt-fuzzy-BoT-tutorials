@@ -516,7 +516,7 @@ velocidade = 0
 
 ## Passo 24
 Preencha o ``||logic:então||`` e o ``||logic:senão||`` desse laço com blocos ``||fuzzyBot:LED esquerdo definir para Ligado||``. Em seguida,
-altere o estado de ``||fuzzyBot:Ligado||`` para ``||fuzzyBot:Desligado||`` dentro do ``||logic:então||``.
+altere o estado de ``||fuzzyBot:Ligado||`` para ``||fuzzyBot:Desligado||`` dentro do ``||logic:senão||``.
 
 ```blocks
 radio.onReceivedValue(function (name, value) {
@@ -540,9 +540,9 @@ radio.onReceivedValue(function (name, value) {
     }
     if (name == "C") {
         if (value == 0) {
-            fuzzyBot.writeLED(fuzzyBot.LED.LEDLeft, fuzzyBot.LEDswitch.turnOff)
-        } else {
             fuzzyBot.writeLED(fuzzyBot.LED.LEDLeft, fuzzyBot.LEDswitch.turnOn)
+        } else {
+            fuzzyBot.writeLED(fuzzyBot.LED.LEDLeft, fuzzyBot.LEDswitch.turnOff)
         }
     }
 })
@@ -578,16 +578,67 @@ radio.onReceivedValue(function (name, value) {
     }
     if (name == "C") {
         if (value == 0) {
-            fuzzyBot.writeLED(fuzzyBot.LED.LEDLeft, fuzzyBot.LEDswitch.turnOff)
-        } else {
             fuzzyBot.writeLED(fuzzyBot.LED.LEDLeft, fuzzyBot.LEDswitch.turnOn)
+        } else {
+            fuzzyBot.writeLED(fuzzyBot.LED.LEDLeft, fuzzyBot.LEDswitch.turnOff)
         }
     }
     if (name == "D") {
         if (value == 0) {
-            fuzzyBot.writeLED(fuzzyBot.LED.LEDRight, fuzzyBot.LEDswitch.turnOff)
-        } else {
             fuzzyBot.writeLED(fuzzyBot.LED.LEDRight, fuzzyBot.LEDswitch.turnOn)
+        } else {
+            fuzzyBot.writeLED(fuzzyBot.LED.LEDRight, fuzzyBot.LEDswitch.turnOff)
+        }
+    }
+})
+let velocidade = 0
+radio.setGroup(255)
+velocidade = 0
+```
+
+## Passo 26
+Agora seu código está pronto! Baixe-o para o micro:bit do FuzzyBoT e teste a combinação do Joystick
+para controlar o carrinho com este código! Lembre-se de ligar ambos os dispositivos e conectá-laços
+no mesmo grupo de rádio.
+
+```blocks
+```
+
+## Passo 27
+Se necessário, confira o seu código clicando na lâmpada de dica.
+
+```blocks
+radio.onReceivedValue(function (name, value) {
+    if (name == "E") {
+        velocidade = value
+    }
+    if (name == "DIR") {
+        if (value == 0) {
+            fuzzyBot.motorStop(fuzzyBot.Motors.All)
+        } else if (value == 1) {
+            fuzzyBot.motorRun(fuzzyBot.Motors.M2, fuzzyBot.Dir.CW, velocidade)
+            fuzzyBot.motorRun(fuzzyBot.Motors.M1, fuzzyBot.Dir.CW, 0)
+        } else if (value == 2) {
+            fuzzyBot.motorRun(fuzzyBot.Motors.M1, fuzzyBot.Dir.CW, velocidade)
+            fuzzyBot.motorRun(fuzzyBot.Motors.M2, fuzzyBot.Dir.CW, 0)
+        } else if (value == 3) {
+            fuzzyBot.motorRun(fuzzyBot.Motors.All, fuzzyBot.Dir.CCW, velocidade)
+        } else if (value == 4) {
+            fuzzyBot.motorRun(fuzzyBot.Motors.All, fuzzyBot.Dir.CW, velocidade)
+        }
+    }
+    if (name == "C") {
+        if (value == 0) {
+            fuzzyBot.writeLED(fuzzyBot.LED.LEDLeft, fuzzyBot.LEDswitch.turnOn)
+        } else {
+            fuzzyBot.writeLED(fuzzyBot.LED.LEDLeft, fuzzyBot.LEDswitch.turnOff)
+        }
+    }
+    if (name == "D") {
+        if (value == 0) {
+            fuzzyBot.writeLED(fuzzyBot.LED.LEDRight, fuzzyBot.LEDswitch.turnOn)
+        } else {
+            fuzzyBot.writeLED(fuzzyBot.LED.LEDRight, fuzzyBot.LEDswitch.turnOff)
         }
     }
 })
