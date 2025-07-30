@@ -1,7 +1,7 @@
 ### @diffs true
 # Prendendo o FuzzyBoT
 
-## Passo 1
+## Passo 1 - teste
 Neste tutorial, vamos aprender como utilizar os três sensores infravermelhos na parte inferior do chassi do FuzzyBoT.
 Eles são especialmente úteis para identificar linhas pretas no chão, permitindo a construção de seguidores de linha.
 Nessa atividade, vamos criar uma função para interpretar o que os sensores estão identificado e manter o FuzzyBoT preso de 
