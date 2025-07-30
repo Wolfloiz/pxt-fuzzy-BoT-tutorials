@@ -12,13 +12,15 @@
         "fb-moving-tutorial.md",
         "fb-joystick-remote.md",
         "fb-joystick-veiculo.md",
-        "fb-run-code.md"
+        "fb-run-code.md",
+        "fb-trapping-fuzzybot.md"
     ],
     "testFiles": [],
     "public": true,
     "targetVersions": {
         "target": "8.0.13",
         "targetId": "microbit"
+        
     },
     "supportedTargets": [
         "microbit"
