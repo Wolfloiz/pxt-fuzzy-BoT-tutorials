@@ -16,7 +16,7 @@
     "testFiles": [],
     "public": true,
     "targetVersions": {
-        "target": "8.0.8",
+        "target": "8.0.13",
         "targetId": "microbit"
     },
     "supportedTargets": [
