@@ -11,7 +11,8 @@
         "README.md",
         "fb-moving-tutorial.md",
         "fb-joystick-remote.md",
-        "fb-joystick-veiculo.md"
+        "fb-joystick-veiculo.md",
+        "fb-run-code.md"
     ],
     "testFiles": [],
     "public": true,
