@@ -14,7 +14,8 @@
         "fb-joystick-veiculo.md",
         "fb-run-code.md",
         "fb-trapping-fuzzybot.md",
-        "fb-follow-the-trail.md"
+        "fb-follow-the-trail.md",
+        "fb-obstacle-ahead.md"
     ],
     "testFiles": [],
     "public": true,
