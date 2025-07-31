@@ -13,7 +13,8 @@
         "fb-joystick-remote.md",
         "fb-joystick-veiculo.md",
         "fb-run-code.md",
-        "fb-trapping-fuzzybot.md"
+        "fb-trapping-fuzzybot.md",
+        "fb-follow-the-trail.md"
     ],
     "testFiles": [],
     "public": true,
