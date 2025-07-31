@@ -16,7 +16,8 @@
         "fb-trapping-fuzzybot.md",
         "fb-follow-the-trail.md",
         "fb-obstacle-ahead.md",
-        "fb-traffic-lights.md"
+        "fb-traffic-lights.md",
+        "fb-on-the-scene.md"
     ],
     "testFiles": [],
     "public": true,
