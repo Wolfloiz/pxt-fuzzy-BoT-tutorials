@@ -22,7 +22,6 @@
     "targetVersions": {
         "target": "8.0.13",
         "targetId": "microbit"
-        
     },
     "supportedTargets": [
         "microbit"
