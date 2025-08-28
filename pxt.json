@@ -18,7 +18,11 @@
         "fb-obstacle-ahead.md",
         "fb-traffic-lights.md",
         "fb-on-the-scene.md",
-        "fb-fork-lift.md"
+        "fb-fork-lift.md",
+        "fb-balloon-popper.md",
+        "fb-follower-color.md",
+        "fb-hitter.md",
+        "fb-robot-paint.md"
     ],
     "testFiles": [],
     "public": true,
