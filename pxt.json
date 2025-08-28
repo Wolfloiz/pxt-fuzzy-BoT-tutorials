@@ -22,7 +22,8 @@
         "fb-balloon-popper.md",
         "fb-follower-color.md",
         "fb-hitter.md",
-        "fb-robot-paint.md"
+        "fb-robot-paint.md",
+        "fb-trapping-bot-2.md"
     ],
     "testFiles": [],
     "public": true,
